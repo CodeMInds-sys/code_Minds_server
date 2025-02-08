@@ -24,7 +24,7 @@ const sendEmail = async (options) => {
 exports.register = async (req, res) => {
   try {
     const { name, email, password, phone, childAge } = req.body;
-
+    console.log('register body:',req.body)
     // Check if user exists
     let user = await User.findOne({ email });
     if (user) {
@@ -63,7 +63,7 @@ exports.register = async (req, res) => {
   } catch (error) {
     res.status(500).json({
       success: false,
-      message: 'حدث خطأ أثناء إنشاء الحساب'
+      message: error.message
     });
   }
 };
@@ -117,7 +117,7 @@ exports.login = async (req, res) => {
   } catch (error) {
     res.status(500).json({
       success: false,
-      message: 'حدث خطأ أثناء تسجيل الدخول'
+      message: error.message
     });
   }
 };

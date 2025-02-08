@@ -1,11 +1,13 @@
 // Handle login
+
+API_URL='http://localhost:3000/api'
 const loginForm = document.getElementById('login-form');
 if (loginForm) {
     loginForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         try {
-            const response = await fetch(`${config.API_URL}/auth/login`, {
+            const response = await fetch(`http://localhost:3000/api/auth/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -50,7 +52,7 @@ if (registerForm) {
         e.preventDefault();
         
         try {
-            const response = await fetch(`${config.API_URL}/auth/register`, {
+            const response = await fetch(`http://localhost:3000/api/auth/register`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

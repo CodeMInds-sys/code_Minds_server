@@ -1,6 +1,6 @@
 // Check authentication
-const token = localStorage.getItem('token');
-const user = <boltAction type="file" filePath="public/js/dashboard-instructor.js">// Check authentication
+// const token = localStorage.getItem('token');
+// const user = <boltAction type="file" filePath="public/js/dashboard-instructor.js">// Check authentication
 const token = localStorage.getItem('token');
 const user = JSON.parse(localStorage.getItem('user'));
 
