@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف الشخصي - منصة الكورسات أونلاين</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="logo">منصة الكورسات</a>
+            <ul class="nav-links">
+                <li><a href="/">الرئيسية</a></li>
+                <li><a href="#" class="logout">تسجيل الخروج</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="profile">
+        <div class="profile-header">
+            <img src="images/default-profile.png" alt="الصورة الشخصية" class="profile-image" id="profile-image">
+            <div class="profile-info">
+                <h2 id="user-name">اسم المستخدم</h2>
+                <p id="user-email">البريد الإلكتروني</p>
+            </div>
+        </div>
+
+        <div class="enrolled-courses">
+            <h3>الكورسات المسجل فيها</h3>
+            <div class="courses-grid" id="enrolled-courses-container">
+                <!-- Enrolled courses will be loaded here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
